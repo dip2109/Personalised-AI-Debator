@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+
+
+/* ------------------NAVBAR--------------------------------- */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #e0e0e0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .logo {
+    height: 50px;
+} */
+
+.abc img{
+    height: 80px;
+    margin-left: 10px;
+ }
+
+/* Navigation Links */
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    color: #77AEF6;
+    /* border: 1px solid #77AEF6;
+    border-radius: 5px;
+    padding: 5px 10px;  */
+}
+
+/* Buttons */
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 35px;
+}
+
+.login-button, .signup-button, .logout-button {
+    padding: 8px 20px;  /* Reduced padding to make height consistent */
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;  /* Set fixed height for consistency */
+    box-sizing: border-box;  /* Include padding and border in height calculation */
+}
+
+.login-button {
+    background: transparent;
+    color: #77AEF6;
+    border: 1px solid #77AEF6;
+}
+
+.signup-button {
+    background-color: #77AEF6;
+    color: white;
+}
+
+.logout-button {
+    background-color: red;
+    color: white;
+}
+
+.login-button:hover, .signup-button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* ---------------------DEBATE-------------------------- */
+
+/* Debate Section */
+.debate-container {
+    margin: 150px auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: #81abe1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Chatbox */
+.chat-box {
+    background: #ffffff;
+    height: 500px;
+    overflow-y: auto;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-message {
+    max-width: 55%;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.chat-message.user {
+    background-color: #a3cdfd;
+    color: black;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chat-message.ai {
+    background-color: #a3cdfd;
+    color: black;
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+/* Buttons */
+.speech-button {
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.speech-button.start {
+    background-color: white;
+    border-color: #333;
+}
+
+.speech-button.stop {
+    background-color: #f2aba4;
+}
