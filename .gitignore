@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+*.venv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and databases
+*.log
+db.sqlite3
+
+# Generated files
+*.out
+*.h5
+*.tflite
+*.onnx
+*.pth
+*.pb
+*.ckpt
+
+# Model checkpoints and cache
+checkpoints/
+saved_models/
+models/
+
+# Datasets
+datasets/
+*.csv
+*.tsv
+*.json
+*.parquet
+
+# Hugging Face transformers cache
+huggingface/
+
+# Weights and Biases
+wandb/
+
+# Pip and Poetry
+pip-log.txt
+poetry.lock
+
+# IDE and editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+
+# Miscellaneous
+*.bak
+*.tmp
