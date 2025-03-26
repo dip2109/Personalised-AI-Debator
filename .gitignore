@@ -1,18 +1,68 @@
-# Byte-compiled / optimized / DLL files
+# Python Backend
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Virtual environment
+*.so
+.Python
+env/
 venv/
-.env/
-*.venv
+ENV/
+.env
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.wav
+*.mp3
+temp.*
+*.temp
+
+# Frontend
+/frontend/node_modules/
+/frontend/.pnp
+/frontend/.pnp.js
+/frontend/coverage/
+/frontend/build/
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+*.pptx
+*.docx
+models/
+checkpoints/
+assets/
+dist/
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
 # Logs and databases
-*.log
 db.sqlite3
 
 # Generated files
@@ -25,9 +75,7 @@ db.sqlite3
 *.ckpt
 
 # Model checkpoints and cache
-checkpoints/
 saved_models/
-models/
 
 # Datasets
 datasets/
@@ -46,13 +94,25 @@ wandb/
 pip-log.txt
 poetry.lock
 
-# IDE and editor settings
-.vscode/
-.idea/
-*.swp
-*.swo
-*.swn
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Miscellaneous
-*.bak
-*.tmp
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
